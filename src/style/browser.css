@@ -1,0 +1,85 @@
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --sepia: rgba(251, 240, 217, 1);
+  --dark-grey: rgba(33, 33, 33, 1);
+  --black-five: rgba(0, 0, 0, 0.05);
+  --white-five: rgba(255, 255, 255, 0.05);
+}
+html {
+  overflow: hidden;
+}
+body {
+  -webkit-app-region: drag;
+}
+::-webkit-scrollbar { /* Notes list scrollbar */
+  width: 6px !important;
+}
+::-webkit-scrollbar-track { /* Notes list scrollbar track */
+  border-radius: 0px !important;
+}
+::-webkit-scrollbar-thumb { /* Notes list scrollbar thumb */
+  border-radius: 0px !important;
+  background: #2DBE60 !important;
+}
+#switch-link { /* Allow text selection on Macos */
+  -webkit-app-region: no-drag;
+}
+div#gwt-debug-NoteView-root {
+  -webkit-app-region: no-drag;
+}
+div#gwt-debug-notesListView {
+  -webkit-app-region: no-drag;
+}
+div#gwt-debug-FocusView-root { /* Main app window background */
+  background-color: white !important;
+}
+.GJDCG5CO4B { /* Elephant logo */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 25px;
+  height: 66px;
+  position: relative;
+}
+.GJDCG5CF5B { /* Sidebar buttons */
+  margin: 20px 0px !important;
+}
+.FocusClipperButton-button {
+  visibility: hidden !important;
+}
+.focus-NotesView-NotesView {
+  background-color: #FFFFFF !important;
+}
+.focus-NotesView-RemindersList {
+  background-color: #FFFFFF;
+}
+.GJDCG5COYB { /* Note list header */
+  background-color: #FFFFFF;
+  margin-bottom:  -6px !important;
+}
+.GJDCG5CO3B { /* Profile background */
+  background-color: #F8F8F8 !important;
+}
+div#gwt-debug-NotesHeaderView-root {
+  background-color: #FFFFFF !important;
+}
+div#gwt-debug-NotesHeader-title { /* Notes list title */
+  padding-bottom: 10px !important;
+}
+html.side-bar-hidden div#gwt-debug-sidebar { /* Make side bar visible */
+  display: none !important;
+}
+html.side-bar-hidden div#gwt-debug-stage {
+  margin-left: 0px !important;
+}
+html.side-bar-hidden-macos div#gwt-debug-NotesHeader-title {
+  padding-top: 13px !important;
+}
+@media all and (max-width: 800px) {
+  div#gwt-debug-NoteView-root {
+    margin-left: 0px !important;
+  }
+  div#gwt-debug-notesListView { /* Auto-hide note list */
+    display: none !important;
+  }
+}
